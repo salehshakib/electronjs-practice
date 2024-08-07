@@ -1,8 +1,17 @@
-import * as React from "react";
-import { App } from "./App";
+import React from "react";
 import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
 
-// const root = document.getElementById("root");
-const root = createRoot(document.body);
+const root = createRoot(document.getElementById("root"));
 
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    {/* <Provider store={store}>
+    <PersistGate persistor={persistor}>
+      <ProviderConfig> */}
+    <App />
+    {/* </ProviderConfig>
+    </PersistGate>
+  </Provider> */}
+  </React.StrictMode>
+);

@@ -30,7 +30,7 @@ module.exports = [
       loader: "babel-loader",
       options: {
         exclude: /node_modules/,
-        presets: ["@babel/preset-env", "@babel/preset-react"],
+        presets: ["@babel/preset-react"],
       },
     },
   },
